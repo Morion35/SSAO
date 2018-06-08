@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/_Scenes/plusgrossesave.unity
     guid: 37a58084bf38d324db7ce055a908cafe
   - enabled: 1
+    path: Assets/_Scenes/mapounette.unity
+    guid: f994efe1f85e1474dafb1d0bb4aa87fd
+  - enabled: 1
+    path: Assets/_Scenes/Mappvp.unity
+    guid: cfd46f57dbc5d2b4f884b0728be36b75
+  - enabled: 1
+    path: Assets/_Scenes/Realpvp.unity
+    guid: f643776b46c4cab46a351c309bf4c3ca
+  - enabled: 1
     path: Assets/_Scenes/Zone 1.unity
     guid: 9755d28a3b06e4704ae3177c5d1f1623
   - enabled: 0

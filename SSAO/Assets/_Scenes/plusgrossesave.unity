@@ -99,21 +99,21 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.09
-    agentHeight: 0.4
+    agentRadius: 4
+    agentHeight: 5
     agentSlope: 60
     agentClimb: 0.1
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 1
     manualCellSize: 0
-    cellSize: 0.030000001
+    cellSize: 1.3333334
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 9b11020a341b8c24c8f9b7bf35c9d20d, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1 &17680 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1498035902495694, guid: 5ddcd840fa885854c911000d371d9514,
@@ -21132,7 +21132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &623680005
 ParticleSystemRenderer:
   serializedVersion: 4
@@ -21249,7 +21249,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -897239970
+  randomSeed: -1999666922
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -36036,7 +36036,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -876207152
+  randomSeed: 2123454019
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -43356,7 +43356,7 @@ Prefab:
         type: 2}
     - target: {fileID: 1355695264592380, guid: 5b718be53b073bb428ccebce264dac51, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114544490877159800, guid: 5b718be53b073bb428ccebce264dac51,
         type: 2}
@@ -53965,11 +53965,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4861998357878648, guid: 8e46610095eb7ba43956209572d81503, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1247660762738804, guid: 8e46610095eb7ba43956209572d81503, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114841094185960064, guid: 8e46610095eb7ba43956209572d81503,
         type: 2}
@@ -56477,7 +56477,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 710212674
+  randomSeed: 2108801553
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -78570,7 +78570,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000014264868206, guid: ca55dd9d7d291014a8b13aaf95318a3a, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198000013289958674, guid: ca55dd9d7d291014a8b13aaf95318a3a,
         type: 2}
@@ -78626,7 +78626,7 @@ Prefab:
       objectReference: {fileID: 1790290817}
     - target: {fileID: 1095375522601876, guid: 29b7eda9648e70242a623b92f17dd7fe, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114861266863947172, guid: 29b7eda9648e70242a623b92f17dd7fe,
         type: 2}

@@ -1,13 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.XR.WSA;
 
 public class bossIA : MonoBehaviour {
 
 	public bool isFocused;
 
 	public bool hint;
+
+	public GameObject capsule;
 
 	public Transform Player;
 
@@ -34,6 +35,8 @@ public class bossIA : MonoBehaviour {
 	public float damage = 10f;
 
 	private float fireuse;
+
+	public GameObject spawn;
 
 	// Use this for initialization
 	void Start () {
@@ -71,17 +74,14 @@ public class bossIA : MonoBehaviour {
 		}
 	    NavMeshHit hit;
 		Vector3 targetDir = Player.position - transform.position;
-		if (Vector3.Angle((Player.position - transform.position), Vector3.forward) < 10f && Time.time > fireuse)
+		if (Vector3.Angle((Player.position - transform.position), Vector3.forward) < 20f && Time.time > fireuse && !nav.Raycast(Player.position, out hit))
 		{
+			Instantiate(capsule, spawn.transform.position, transform.rotation, transform);
 			fireuse = Time.time + firetime;
-			Player.GetComponent<PlayerStatus>().HP -=
-				damage - (damage * Player.GetComponent<PlayerStatus>().armor / 100);
 		}
-		if (Player.GetComponent<PlayerStatus>().isdead)
+		else
 		{
-			Players = GameObject.FindGameObjectsWithTag("Player");
-			isFocused = false;
-			Player = Players[0].transform;
+			nav.SetDestination(Player.position);
 		}
     }
 
